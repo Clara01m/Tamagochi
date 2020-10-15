@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Tamagochi
 {
@@ -31,14 +32,17 @@ namespace Tamagochi
 
         public void Hi()
         { 
-            
-            ReduceBoredom;
+            int wordIndex = generator.Next(words.Count);
+
+            System.Console.WriteLine(words[wordIndex]);
+
+            ReduceBoredom();
         }
 
         public void Teach(string word)
         {
             words.Add(word); 
-            ReduceBoredom;
+            ReduceBoredom();
         }
 
         public void Tick()

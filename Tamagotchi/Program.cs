@@ -13,7 +13,8 @@ namespace Tamagochi
             first.Name= Console.ReadLine(); 
             Console.WriteLine("So" + first.Name + "? Great choice!");
 
-
+            
+            
         }
     }
 }
