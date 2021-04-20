@@ -12,9 +12,11 @@ namespace Tamagochi
             Console.WriteLine("First of all, what do you want to call your new pet?");
             first.Name= Console.ReadLine(); 
             Console.WriteLine("So" + first.Name + "? Great choice!");
+            
+            if (getAlive)
+            {}
+            
 
-            
-            
         }
     }
 }
